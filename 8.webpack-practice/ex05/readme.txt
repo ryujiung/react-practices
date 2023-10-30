@@ -1,8 +1,8 @@
-ex04: css 모듈 번들링
+ex05: sass/scss 모듈 번들링
 
 1. 설치 패키지
 // command 라인에서 core를 실행시키기 위함(-cli)
-$ npm i -D express webpack webpack-cli webpack-dev-server css-loader style-loader
+$ npm i -D express webpack webpack-cli webpack-dev-server css-loader style-loader sass-loader node-sass
 
 2.번들링환경(webpack.config.js) 설정
   1) entry
