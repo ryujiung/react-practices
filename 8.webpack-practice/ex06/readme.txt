@@ -2,7 +2,8 @@ ex06: image 모듈 번들링
 
 1. 설치 패키지
 // command 라인에서 core를 실행시키기 위함(-cli)
-$ npm i -D express webpack webpack-cli webpack-dev-server css-loader style-loader sass-loader node-sass
+$ npm i -D webpack webpack-cli webpack-dev-server css-loader style-loader sass-loader node-sass babel-loader @babel/core @babel/preset-env @babel/preset-react
+  $ npm i react react-dom
 
 2.번들링환경(webpack.config.js) 설정
   1) entry
