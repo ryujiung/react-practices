@@ -12,7 +12,11 @@ module.exports = function(env) {
             assetModuleFilename: 'assets/images/[hash][ext]'
         },
         module: {
-            rules:[{
+            rules:[ {
+                test: /\.json$/,
+                type: 'javascript/auto',
+                use: 'json-loader',
+              },{
                 test: /\.js/i,
                 exclude: /node_modules/,
                 loader: 'babel-loader',

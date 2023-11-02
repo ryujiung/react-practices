@@ -1,10 +1,10 @@
 import React from 'react';
-import styles from './assets/css/App.css';
+import styles from './assets/scss/App.scss';
 
 function App() {
     return (
-        <div id={'App'}>
-            <h1 className={'Header'}>CSS Module 2</h1>
+        <div id={styles.App}>
+            <h1 className={styles.Header}>CSS Module I</h1>
         </div>
     );
 }
