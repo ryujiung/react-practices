@@ -19,7 +19,8 @@ export default function App() {
         
         // Clean up the interval when the component unmounts
         return () => clearInterval(intervalId);
-      }, []);
+      }, []); 
+    
 
     return (
         <>

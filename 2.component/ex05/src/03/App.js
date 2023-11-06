@@ -12,11 +12,11 @@ export default class App extends Component {
 
     _getCurrentTime() {
         const d = new Date();
+        const hours = now.getHours();
         return {
-
-
-
-
+            hours: ('0' + (hours > 12 ? hours - 12 : hours)).slice(-2),
+            minutes: ('0' + now.getMinutes()).slice(-2),
+            seconds: ('0' + now.getSeconds()).slice(-2)
 
         }
     }
@@ -31,7 +31,7 @@ export default class App extends Component {
     render() {
         return (
             <div className='clock-display'>
-                <h2>ex05 - Component LifeCycle Practice</h2>
+                <h2>ex05 - Component LifeCycle Practice: </h2>
                 <Clock
                     hours={'02'}
                     minutes={32}
