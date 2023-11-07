@@ -3,7 +3,7 @@ import Task from './Task';
 import styles from './assets/css/TaskList.css';
 
 const TaskList = ({tasks}) => {
-
+    const [tasks,setTasks] = useState(null);
     return (
         <div>
             <ul>
