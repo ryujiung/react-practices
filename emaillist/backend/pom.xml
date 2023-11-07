@@ -2,15 +2,15 @@
 	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
-	
+
 	<!-- 부모 스타터 -->
 	<parent>
 		<groupId>org.springframework.boot</groupId>
 		<artifactId>spring-boot-starter-parent</artifactId>
 		<version>2.7.16</version>
-		<relativePath /> <!-- lookup parent from repository -->
+		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
-	
+
 	<groupId>com.poscodx</groupId>
 	<artifactId>emaillist</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
@@ -34,7 +34,7 @@
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-web</artifactId>
 		</dependency>
-
+		
 		<!-- MyBatis Starter -->
 		<dependency>
 			<groupId>org.mybatis.spring.boot</groupId>
@@ -42,15 +42,16 @@
 			<version>2.2.0</version>
 		</dependency>
 		
-		<!-- lomok-->
+		<!-- lombok -->
 		<dependency>
 			<groupId>org.projectlombok</groupId>
 			<artifactId>lombok</artifactId>
 		</dependency>
-		<!-- mariadb jdbc driver -->
+		
+		<!-- mariadb jdbc driver -->		
 		<dependency>
-			<groupId>org.mariadb.jdbc</groupId>
-			<artifactId>mariadb-java-client</artifactId>
+		    <groupId>org.mariadb.jdbc</groupId>
+		    <artifactId>mariadb-java-client</artifactId>
 		</dependency>
 
 		<!-- Spring Boot Test Integration -->
@@ -70,12 +71,16 @@
 				<configuration>
 					<excludes>
 						<exclude>
+							<groupId>org.projectlombok</groupId>
+							<artifactId>lombok</artifactId>
+						</exclude>
+						<exclude>
 							<groupId>org.springframework.boot</groupId>
 							<artifactId>spring-boot-devtools</artifactId>		
 						</exclude>
 					</excludes>
 				</configuration>
-			</plugin>								
+			</plugin>			
 		</plugins>		
-	</build>
+	</build>				
 </project>
