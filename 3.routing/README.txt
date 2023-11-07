@@ -37,4 +37,4 @@ $ npm i react-router react-router-dom
     }
 
 4.  테스트 서버 실행
-    $ npm run debug 
+    $ npm run debug src = 
