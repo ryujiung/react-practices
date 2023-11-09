@@ -37,3 +37,5 @@ Emaillist: Frontend
     # ssh-keygen -t rsa -b 2048 -m PEM -C "rju1202@gmail.com"
 
     2) key 
+
+3-2. deploy: Publish 
