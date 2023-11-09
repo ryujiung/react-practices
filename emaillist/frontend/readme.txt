@@ -29,4 +29,11 @@ Emaillist: Frontend
         # mvn -f emaillist/backend exec:exec clean package
 
     3) 테스트
-        # java -D srping.profiles.active=production -jar emaillist/backend/target/emaillist.jar
+        # java -D spring.profiles.active=production -jar emaillist/backend/target/emaillist.jar
+
+
+3-1.deploy: ssh연결(ssh key 인증)
+    1) Key 생성하기
+    # ssh-keygen -t rsa -b 2048 -m PEM -C "rju1202@gmail.com"
+
+    2) key 
