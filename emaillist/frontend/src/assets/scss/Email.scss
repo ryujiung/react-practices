@@ -1,5 +1,4 @@
-        
-.Email{
+.Email {
     position: relative;
     background: #fff;
     width: 298px;
@@ -8,7 +7,7 @@
     border: 1px solid #e5e5e5;
     border-radius: 3px;
     box-shadow: 0 1px 0 rgba(0, 0, 0, 0.25);
-    
+
     h4 {
         padding: 5px 0;
     }
@@ -31,9 +30,11 @@
         text-align: center;
         line-height: 8px;
         padding-top: 2px;
+
         &:before {
             content:'X'
         }
+
         &:hover, &:visited, &:active {
             text-decoration: none;
             color: #fff;

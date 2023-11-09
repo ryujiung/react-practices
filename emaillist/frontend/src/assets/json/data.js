@@ -1,5 +1,4 @@
-export default 
-[
+export default [
     {
         "no": 1,
         "firstName": "둘",
@@ -24,4 +23,4 @@ export default
         "lastName": "치",
         "email": "ddochi@gmail.com"
     }
-]
+];
